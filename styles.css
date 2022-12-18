@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    background-image: url(https://i.pinimg.com/originals/88/ed/54/88ed54a0a93442bfcfe07360354a3a56.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    min-height: 100vh;
+}
+
+.contador-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 40rem;
+    height: 25rem;
+    margin: 18rem auto;
+    background-color: white;
+    border-radius: 0 3rem 0 0;
+}
+
+.contador-container p{
+    display: flex;
+    justify-content: right;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 2rem;
+    background-clip: text;
+}
+
+.contador-container p span{
+    font-size: 3rem;
+}
+
+.container-btn{
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    background-color: #000000;
+    width: 33rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    box-shadow: 0 1rem 1rem rgb(0, 0, 0);
+}
+
+.container-btn button{
+    width: 8rem;
+    height: 3rem;
+    background-color: transparent;
+    border: thin solid transparent;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+}
+
+.container-btn button:hover{
+    background-color: white;
+    color: black;
+    border-radius: 2rem;
+}
+
+@media (max-width:500px) {
+    .contador-container{
+        width: 35rem;
+        height: 23rem;
+    }
+    
+    .contador-container p,
+    .contador-container p span{
+        font-size: 2rem;
+    }
+
+    .container-btn{
+        top: 35%;
+        width: 28rem;
+        height: 8rem;
+    }
+}
